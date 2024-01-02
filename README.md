@@ -25,7 +25,7 @@ wget -q https://raw.githubusercontent.com/gemilangvip/autoscript-vip/main/update
 - DEBIAN Version 09 Atau 10
 
 ## SERVER OTHER FEATURES
-- Timezone           : Other Location
+- Timezone           : Locatiaon VPS
 - Fail2Ban           : [ON]
 - Dflate             : [ON]
 - IPtables           : [ON]
