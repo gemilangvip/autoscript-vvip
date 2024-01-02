@@ -48,7 +48,7 @@ read -p "PPlease Choose 1 or x : " option2
 case $option2 in
 1)
 version=$(cat /home/ver)
-new_version=$( curl https://raw.githubusercontent.com/gemilangvip/autoscript-vvip/main/newversion | grep $version )
+new_version=$( curl https://raw.githubusercontent.com/gemilangvip/autoscript-vvip/main/version | grep $version )
 if [ $version = $new_version ]; then
 clear
 echo ""
@@ -99,6 +99,11 @@ wget -q -O /usr/bin/menu-trojan "https://raw.githubusercontent.com/gemilangvip/a
 wget -q -O /usr/bin/menu-ssh "https://raw.githubusercontent.com/gemilangvip/autoscript-vvip/main/menu/menu-ssh.sh"
 wget -q -O /usr/bin/menu-backup "https://raw.githubusercontent.com/gemilangvip/autoscript-vvip/main/menu/menu-backup.sh"
 wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/gemilangvip/autoscript-vvip/main/menu/menu.sh"
+wget -q -O /usr/bin/theme "https://raw.githubusercontent.com/gemilangvip/autoscript-vvip/main/menu/menu1.sh"
+wget -q -O /usr/bin/theme "https://raw.githubusercontent.com/gemilangvip/autoscript-vvip/main/menu/menu2.sh"
+wget -q -O /usr/bin/theme "https://raw.githubusercontent.com/gemilangvip/autoscript-vvip/main/menu/menu3.sh"
+wget -q -O /usr/bin/theme "https://raw.githubusercontent.com/gemilangvip/autoscript-vvip/main/menu/menu4.sh"
+wget -q -O /usr/bin/theme "https://raw.githubusercontent.com/gemilangvip/autoscript-vvip/main/menu/menu5.sh"
 wget -q -O /usr/bin/menu-webmin "https://raw.githubusercontent.com/gemilangvip/autoscript-vvip/main/menu/menu-webmin.sh"
 wget -q -O /usr/bin/xp "https://raw.githubusercontent.com/gemilangvip/autoscript-vvip/main/ssh/xp.sh"
 wget -q -O /usr/bin/update "https://raw.githubusercontent.com/gemilangvip/autoscript-vvip/main/update.sh"
