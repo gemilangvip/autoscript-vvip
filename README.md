@@ -25,12 +25,11 @@ wget -q https://raw.githubusercontent.com/gemilangvip/autoscript-vip/main/update
 - DEBIAN Version 09 Atau 10
 
 ## SERVER OTHER FEATURES
-- Timezone           : Asia/Jakarta (GMT +7)
+- Timezone           : Other Location
 - Fail2Ban           : [ON]
 - Dflate             : [ON]
 - IPtables           : [ON]
 - Auto-Reboot        : [ON]
-- IPv6               : [OFF]
 - Autoreboot On      : 7:00  GMT +7
 - AutoKill Multi Login User
 - Auto Delete Expired Account
@@ -45,6 +44,7 @@ wget -q https://raw.githubusercontent.com/gemilangvip/autoscript-vip/main/update
 - OpenSSH            : 22
 - SSH Websocket      : 80 [ON]
 - SSH SSL Websocket  : 443
+- SSH UDP            : 1-65535
 - Stunnel4           : 447, 777
 - Dropbear           : 109, 143
 - Badvpn             : 7100-7900
