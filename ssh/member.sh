@@ -3,9 +3,6 @@ dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Dat
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
 
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\E[40;1;37m                 MEMBER SSH               \E[0m"
@@ -20,9 +17,9 @@ exp="$(chage -l $AKUN | grep "Account expires" | awk -F": " '{print $2}')"
 status="$(passwd -S $AKUN | awk '{print $2}' )"
 if [[ $ID -ge 1000 ]]; then
 if [[ "$status" = "L" ]]; then
-printf "%-15s %2s %-15s %2s \n" "$AKUN" "$exp     " "${RED}LOCKED${NORMAL}"
+printf "%-15s %2s %-15s %2s \n" "$AKUN" "$exp     " "LOCKED"
 else
-printf "%-15s %2s %-15s %2s \n" "$AKUN" "$exp     " "${GREEN}UNLOCKED${NORMAL}"
+printf "%-15s %2s %-15s %2s \n" "$AKUN" "$exp     " "UNLOCKED"
 fi
 fi
 done < /etc/passwd
