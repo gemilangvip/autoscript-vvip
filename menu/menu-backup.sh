@@ -23,8 +23,7 @@ echo -e "$green╚═╝     ╚═╝╚══════╝╚═╝  ╚═�
 echo -e "${ungu}++++++++++++++++++++++++++++++++++++++++++++"
 echo -e
 echo -e "${BlueCyan}              Menu Backup                   "
-echo -e
-echo -e "         t.me/Gemilangkinasih"
+echo -e "         T.me/Gemilangkinasih"
 echo -e "${ungu}++++++++++++++++++++++++++++++++++++++++++++"
 echo
 echo
@@ -39,7 +38,7 @@ echo
 echo -e "${ungu}++++++++++++++++++++++++++++++++++++++++++++"
 echo
 echo -e "${BlueCyan}"
-read -p    "Pilih Nomor └╼>>>" bro
+read -p    "Pilih Nomor └╼>>>"  bro
 
 if [ $bro = 1 ] || [ $bro = 1 ]
 then
