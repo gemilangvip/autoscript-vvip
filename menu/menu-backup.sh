@@ -38,7 +38,7 @@ echo
 echo -e "${ungu}++++++++++++++++++++++++++++++++++++++++++++"
 echo
 echo -e "${BlueCyan}"
-read -p    "Pilih Nomor └╼>>>"  bro
+read -p    "Pilih Nomor └╼>>> "bro
 
 if [ $bro = 1 ] || [ $bro = 1 ]
 then
