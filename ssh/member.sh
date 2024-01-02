@@ -3,7 +3,8 @@ dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Dat
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
 
-
+RED='\033[0;31m'
+GREEN='\033[0;32m'
 
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
