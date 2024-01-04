@@ -90,8 +90,8 @@ clear
 clear && clear && clear
 clear;clear;clear
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e "                ${YELLOW}(${NC}${GREEN} STATUS SERVICE INFORMATION ${NC}${YELLOW})${NC}"
-echo -e "         OWNER : ${GREEN} @Gemilangkinasih࿐ ${NC}${YELLOW}(${NC} ${GREEN} BIGETRO RED ALIEND  ${NC}${YELLOW})${NC}"
+echo -e "            ${YELLOW}(${NC}${GREEN} STATUS SERVICE INFORMATION ${NC}${YELLOW})${NC}"
+echo -e "     OWNER : ${GREEN} @Gemilangkinasih࿐ ${NC}${YELLOW}(${NC} ${GREEN} BIGETRO RED ALIEND  ${NC}${YELLOW})${NC}"
 echo -e "       © Copyright By @Gemilangkinasih࿐ ${YELLOW}(${NC} 2024-2025 ${YELLOW})${NC}"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
