@@ -119,7 +119,7 @@ echo -e "$green██║██╔██╗██║╚█████╗░░�
 echo -e "$green██║██║╚████║░╚═══██╗░░░██║░░░██╔══██║██║░░░░░██║░░░░░  ░╚═══██╗░╚═══██╗██╔══██║$NC"
 echo -e "$green██║██║░╚███║██████╔╝░░░██║░░░██║░░██║███████╗███████╗  ██████╔╝██████╔╝██║░░██║$NC"
 echo -e "$green╚═╝╚═╝░░╚══╝╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚══════╝╚══════╝  ╚═════╝░╚═════╝░╚═╝░░╚═╝$NC"
-echo -e "$green♥ TERIMAKASIH TELAH MEMAKAI AUTOSCRIPT GEMILANG-KINASIH࿐ ♥$NC"
+echo -e "$green» TERIMAKASIH TELAH MEMAKAI AUTOSCRIPT GEMILANG-KINASIH࿐ «$NC"
 sleep 2
 echo -ne "[ ${green}INFO${NC} ] Check permission : "
 mkdir -p /var/lib/SIJA >/dev/null 2>&1
@@ -140,18 +140,11 @@ echo -e "$green━━━━━━━━━━━━━━━━━━━━━�
 echo -e "$green━━━━━━━━━━━━━━━━━━━━━┗┛━━━━━━━━━━━━━━━━━━━━━━┗━━┛$NC"
     echo -e "$BBlue                     SETUP DOMAIN VPS     $NC"
     echo -e "$BYellow----------------------------------------------------------$NC"
-    echo -e "$BGreen 1. Use Domain Random / Gunakan Domain Random $NC"
-    echo -e "$BGreen 2. Choose Your Own Domain / Gunakan Domain Sendiri $NC"
+    echo -e "$BGreen 1. Choose Your Own Domain / Gunakan Domain Sendiri $NC"
+    echo -e "$BGreen 2. Use Domain Random / Gunakan Domain Random $NC"
     echo -e "$BYellow----------------------------------------------------------$NC"
     read -rp " input 1 or 2 / pilih 1 atau 2 : " dns
 	if test $dns -eq 1; then
-    clear
-    apt install jq curl -y
-    wget -q -O /root/cf "${CDN}/cf" >/dev/null 2>&1
-    chmod +x /root/cf
-    bash /root/cf | tee /root/install.log
-    print_success " Domain Random Done"
-	elif test $dns -eq 2; then
     read -rp " Enter Your Domain / masukan domain : " dom
     read -rp " Input ur ns-domain : " -e nsdomen
     echo "IP=$dom" > /var/lib/SIJA/ipvps.conf
@@ -162,6 +155,13 @@ echo -e "$green━━━━━━━━━━━━━━━━━━━━━�
 	echo "$dom" > /root/domain
         echo "$nsdomen" > /etc/xray/nsdomain
         echo "$nsdomen" > /root/nsdomain
+	elif test $dns -eq 2; then
+    clear
+    apt install jq curl -y
+    wget -q -O /root/cf "${CDN}/cf" >/dev/null 2>&1
+    chmod +x /root/cf
+    bash /root/cf | tee /root/install.log
+    print_success " Domain Random Done"
 fi
 # Inisialisasi
 MYIP=$(curl -sS ipv4.icanhazip.com)
@@ -272,11 +272,9 @@ gg="AM"
 fi
 curl -sS ifconfig.me > /etc/myipvps
 echo " "
-echo "===================-[ GEMILANG-KINASIH ]-==================="
-echo ""
-echo "------------------------------------------------------------"
-echo ""
-echo ""
+echo "===================-[ GEMILANG-KINASIH ]-===================" | tee -a log-install.txt
+echo "------------------------------------------------------------" | tee -a log-install.txt
+echo "" | tee -a log-install.txt
 echo "   >>> Service & Port"  | tee -a log-install.txt
 echo "   - OpenVPN		: 2086"  | tee -a log-install.txt
 echo "   - OpenSSH		: 22"  | tee -a log-install.txt
@@ -309,19 +307,16 @@ echo "   - VPS settings" | tee -a log-install.txt
 echo "   - Admin Control" | tee -a log-install.txt
 echo "   - Change port" | tee -a log-install.txt
 echo "   - Full Orders For Various Services" | tee -a log-install.txt
-echo ""
-echo ""
-echo "------------------------------------------------------------"
-echo ""
-echo "===============-[ Script By Gemilangkinasih ]-=============="
+echo "" | tee -a log-install.txt
+echo "------------------------------------------------------------" | tee -a log-install.txt
+echo "===============-[ Script By Gemilangkinasih ]-==============" | tee -a log-install.txt
 echo -e ""
 echo ""
-echo "" | tee -a log-install.txt
+echo ""
 rm /root/setup.sh >/dev/null 2>&1
 rm /root/ins-xray.sh >/dev/null 2>&1
 rm /root/insshws.sh >/dev/null 2>&1
 secs_to_human "$(($(date +%s) - ${start}))" | tee -a log-install.txt
-echo -e "
-"
+echo -e ""
 read -n 1 -s -r -p "Press any key to menu"
 menu
