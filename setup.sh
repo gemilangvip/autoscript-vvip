@@ -150,10 +150,10 @@ echo -e "$green━━━━━━━━━━━━━━━━━━━━━�
     wget -q -O /root/cf "${CDN}/cf" >/dev/null 2>&1
     chmod +x /root/cf
     bash /root/cf | tee /root/install.log
-    print_success "Domain Random Done"
+    print_success " Domain Random Done"
 	elif test $dns -eq 2; then
-    read -rp "Enter Your Domain / masukan domain : " dom
-    read -rp "Input ur ns-domain : " -e nsdomen
+    read -rp " Enter Your Domain / masukan domain : " dom
+    read -rp " Input ur ns-domain : " -e nsdomen
     echo "IP=$dom" > /var/lib/SIJA/ipvps.conf
     echo "$dom" > /root/scdomain
 	echo "$dom" > /etc/xray/scdomain
@@ -192,7 +192,7 @@ CHATID="6348824977"
 KEY="6854390843:AAHnygrqUOSq-5spVPBBrOvBMy4xcdUBPBU"
 TIME="10"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
-TEXT="Installasi Script V2.4 By Gemilangkinasih࿐
+TEXT="Instalasi Autoscript-vvip V2.4
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 <code>Username   :</code> <code>$Name</code>
 <code>Domain     :</code> <code>$domain</code>
@@ -202,7 +202,9 @@ TEXT="Installasi Script V2.4 By Gemilangkinasih࿐
 <code>Location   :</code> <code>$CITY</code>
 <code>Exp Sc.    :</code> <code>$Exp</code>
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-<i>Automatic Notifications From Github</i>
+By Admin Gemilangkinasih࿐
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<i>Notifications Automatic From Github</i>
 "'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"https://wa.me/+628984880039"}]]}' 
 
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
