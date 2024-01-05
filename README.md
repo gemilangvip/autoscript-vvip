@@ -72,7 +72,7 @@ wget -q https://raw.githubusercontent.com/gemilangvip/autoscript-vip/main/update
 <img width="100%" alt="Screenshot_20240102_204408" src="https://github.com/gemilangvip/autoscript-vvip/assets/154574742/613d3df8-930e-4e4b-9d98-663b6723bb5b">
 <img width="100%" alt="Screenshot_20240102_204438" src="https://github.com/gemilangvip/autoscript-vvip/assets/154574742/1e49c63e-e9a3-47cc-abea-fd81a5f121e8">
 
-## `! MEKANISME PENYEWAAN AUTOSCRIPT MEMBER VIP 10K, 2 IP / BULAN !`
+## `! MEKANISME PENYEWAAN AUTOSCRIPT MEMBER VVIP 10K, 2 IP / BULAN !`
 - Script `VIP` Last Update `Version 2.4`, Semua Fitur Pada Menu Utama Sudah Dioptimalkan Sehingga Meminimalisir Adanya `BUG`<br>
 
 Hubungi Admin Melalui Whatsaap, Kirim `IP VPS` Dan `Lakukan Proses Pembayaran!`. Setelah Berhasil IP Akan Diinputkan Oleh - Admin 𝔾𝕖𝕞𝕚𝕝𝕒𝕟𝕘𝕂𝕚𝕟𝕒𝕤𝕚𝕙࿐
