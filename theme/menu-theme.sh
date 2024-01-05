@@ -14,13 +14,13 @@ Red_background="\033[41;37m"
 Suffix="\033[0m"
 echo ""
 echo -e "${ungu}++++++++++++++++++++++++++++++++++++++++++++"
-echo -e
-echo -e "${BlueCyan}              Menu Theme                   "
-echo -e "${BlueCyan}          pilih tampilan menu yang ada "
-echo -e
+echo 
+echo -e "${BlueCyan}              Menu Theme "
+echo -e "${BlueCyan}     Pilih Tampilan Menu Yang Ada "
+echo 
 echo -e "${ungu}++++++++++++++++++++++++++++++++++++++++++++"
-echo
-echo
+echo 
+echo 
 echo -e "${BlueCyan}Pilih Nomor: "
 echo
 echo "1).Tampilan Menu ke 1"
@@ -32,7 +32,7 @@ echo
 echo -e "${ungu}++++++++++++++++++++++++++++++++++++++++++++"
 echo
 echo -e "${BlueCyan}"
-read -p    "Pilih nomor └╼>>>    " bro
+read -p "Pilih nomor └╼>>> " bro
 if [ $bro = 1 ] || [ $bro = 1 ]
 then
 figlet "theme-1" | lolcat
