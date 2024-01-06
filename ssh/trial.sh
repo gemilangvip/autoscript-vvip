@@ -1,4 +1,13 @@
 #!/bin/bash
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# System Request : Debian 9+/Ubuntu 18.04+/20+
+# Develovers » Gemilangkinasih࿐
+# Email      » gemilangkinasih@gmail.com
+# telegram   » https://t.me/gemilangkinasih
+# whatsapp   » wa.me/+628984880039
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# Gemilangkinasih࿐
+
 dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
@@ -65,7 +74,7 @@ echo -e "Nameserver  : $sldomain" | tee -a /etc/log-create-user.log
 echo -e "OpenSSH     : $opensh" | tee -a /etc/log-create-user.log
 echo -e "SSH-WS      : $portsshws" | tee -a /etc/log-create-user.log
 echo -e "SSH-SSL-WS  : $wsssl" | tee -a /etc/log-create-user.log
-echo -e "SSL/TLS     : $ssl" | tee -a /etc/log-create-user.log
+echo -e "SSL/TLS     : 8880, 8443" | tee -a /etc/log-create-user.log
 echo -e "UDPGW       : 7100-7300" | tee -a /etc/log-create-user.log
 echo -e "SSH-UDP     : 1-65535" | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
@@ -98,7 +107,7 @@ echo -e "Nameserver  : $sldomain" | tee -a /etc/log-create-user.log
 echo -e "OpenSSH     : $opensh" | tee -a /etc/log-create-user.log
 echo -e "SSH-WS      : $portsshws" | tee -a /etc/log-create-user.log
 echo -e "SSH-SSL-WS  : $wsssl" | tee -a /etc/log-create-user.log
-echo -e "SSL/TLS     : $ssl" | tee -a /etc/log-create-user.log
+echo -e "SSL/TLS     : 8880, 8443" | tee -a /etc/log-create-user.log
 echo -e "UDPGW       : 7100-7300" | tee -a /etc/log-create-user.log
 echo -e "SSH-UDP     : 1-65535" | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
