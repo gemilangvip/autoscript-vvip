@@ -78,7 +78,7 @@ clear
 
 
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\\E[40;1;37mCREATE TRIAL ACCOUNT VMESS SUCCESS\E[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[40;1;37mCREATE TRIAL ACCOUNT VMESS SUCCESS \E[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "Remarks        : ${user}"
 echo -e "Domain         : ${domain}"
@@ -99,7 +99,9 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 echo -e "Link GRPC      : ${vmesslink3}"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "Expired On     : $exp"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[40;1;37mPremium AutoScript By Gemilangvip  \E[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
