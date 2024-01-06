@@ -45,8 +45,8 @@ v2ray-menu
 	done
 
 uuid=$(cat /proc/sys/kernel/random/uuid)
-read -p "limit Ip ( DEVICE )   : " limit
-read -p "limit Quota ( GB )    : " quota
+read -p "limit Ip ( DEVIC ) : " limit
+read -p "limit Quota ( GB ) : " quota
 read -p "limit Bandwith ( GB ) :  " bw
 read -p "Expired (days)	: " masaaktif
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
