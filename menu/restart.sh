@@ -25,7 +25,7 @@ echo -e   "Press x or [ Ctrl+C ] • To-Exit"
 echo -e   ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-read -p " Select menu : " Restart
+read -p "Select menu : " Restart
 echo -e ""
 sleep 1
 clear
