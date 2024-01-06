@@ -14,7 +14,7 @@ tls="$(cat ~/log-install.txt | grep -w "Vless TLS" | cut -d: -f2|sed 's/ //g')"
 none="$(cat ~/log-install.txt | grep -w "Vless None TLS" | cut -d: -f2|sed 's/ //g')"
 until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${CLIENT_EXISTS} == '0' ]]; do
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[40;1;37m      Add Xray/Vless Account      \E[0m"
+echo -e "\E[40;1;37m       Add Xray/Vless Account      \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 
 		read -rp "User: " -e user
@@ -23,7 +23,7 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 		if [[ ${CLIENT_EXISTS} == '1' ]]; then
 clear
 		echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-		echo -e "\E[40;1;37m      Add Xray/Vless Account      \E[0m"
+		echo -e "\E[40;1;37m       Add Xray/Vless Account      \E[0m"
 		echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 			echo ""
 			echo "A client with the specified name was already created, please choose another name."
@@ -34,10 +34,10 @@ clear
 	done
 
 uuid=$(cat /proc/sys/kernel/random/uuid)
-read -p "Expired (days): " masaaktif
-read -p "Limit ip                   : " Limit
-read -p "Limit quota ( GB ) : " quota
-read -p "Limit bw ( GB         : " bw
+read -p "limit ip ( DEVIC ) : " limit
+read -p "limit quota ( GB ) : " quota
+read -p "limit bandwith ( GB ) :  " bw
+read -p "Expired (days)	: " masaaktif
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 sed -i '/#vless$/a\#& '"$user $exp"'\
 },{"id": "'""$uuid""'","email": "'""$user""'"' /etc/xray/config.json
