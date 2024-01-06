@@ -108,7 +108,7 @@ echo "Checking VPS"
 
 clear
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "       ${BIWhite}${UWhite}TRIALL ${NC}"
+echo -e "     ${BIWhite}${UWhite}MENU TRIALL ${NC}"
 echo -e ""
 echo -e "     ${BICyan}[${BIWhite}01${BICyan}] Trial Account SSH & OVPN   "
 echo -e "     ${BICyan}[${BIWhite}02${BICyan}] Trial Account VMESS    "
