@@ -107,7 +107,7 @@ echo "Checking VPS"
 
 clear
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "       ${BIWhite}${UWhite}SSH ${NC}"
+echo -e "     ${BIWhite}${UWhite}MENU SSH ${NC}"
 echo -e ""
 echo -e "     ${BICyan}[${BIWhite}01${BICyan}] Create SSH & OpenVPN Account      "
 echo -e "     ${BICyan}[${BIWhite}02${BICyan}] Trial Account SSH & OpenVPN      "
