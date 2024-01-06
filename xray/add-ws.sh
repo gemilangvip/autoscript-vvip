@@ -115,7 +115,7 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 echo -e "Remarks        : ${user}" | tee -a /etc/log-create-user.log
 echo -e "limit Ip       : ${limit} ( Device )"
 echo -e "limit Quota    : ${quota} ( GB )"
-echo -e "limit BW    	: ${domain}" | tee -a /etc/log-create-user.log
+echo -e "limit BW	: ${domain}" | tee -a /etc/log-create-user.log
 echo -e "Port TLS       : 443" | tee -a /etc/log-create-user.log
 echo -e "Port None TLS  : 80" | tee -a /etc/log-create-user.log
 echo -e "Port  GRPC     : 443" | tee -a /etc/log-create-user.log
