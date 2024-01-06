@@ -1,7 +1,13 @@
 #!/bin/bash
-# SL
-# ==========================================
-# Color
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# System Request : Debian 9+/Ubuntu 18.04+/20+
+# Develovers » Gemilangkinasih࿐
+# Email      » gemilangkinasih@gmail.com
+# telegram   » https://t.me/gemilangkinasih
+# whatsapp   » wa.me/+628984880039
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# Gemilangkinasih࿐
+
 RED='\033[0;31m'
 NC='\033[0m'
 GREEN='\033[0;32m'
@@ -46,12 +52,12 @@ link="trojan-go://${uuid}@isi_bug_disini:${trgo}/?sni=${domain}&type=ws&host=${d
 link1="trojan://${uuid}@isi_bug_disini:${trgo}/?sni=${domain}&type=ws&host=${domain}&path=%2Ftrojango#$user"
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\E[40;1;37m          TROJAN GO          \E[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[40;1;37mCREATE ACCOUNT TROJAN GO SUCCESS   \E[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Remarks    : ${user}" | tee -a /etc/log-create-user.log
-echo -e "limit ip   : ${limit} ( Devic )"
-echo -e "limit quota: ${quota} ( GB )"
-echo -e "limit bw   : ${bw} ( GB )"
+echo -e "limit ip   : ${limit} ( Devic )" | tee -a /etc/log-create-user.log
+echo -e "limit quota: ${quota} ( GB )" | tee -a /etc/log-create-user.log
+echo -e "limit bw   : ${bw} ( GB )" | tee -a /etc/log-create-user.log
 echo -e "IP/Host    : ${MYIP}" | tee -a /etc/log-create-user.log
 echo -e "Address    : ${domain}" | tee -a /etc/log-create-user.log
 echo -e "Port       : ${trgo}" | tee -a /etc/log-create-user.log
@@ -60,12 +66,12 @@ echo -e "Encryption : none" | tee -a /etc/log-create-user.log
 echo -e "Path       : /trojango" | tee -a /etc/log-create-user.log
 echo -e "Created    : $hariini" | tee -a /etc/log-create-user.log
 echo -e "Expired    : $exp" | tee -a /etc/log-create-user.log
-echo -e "========================="
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Link TrGo  		: ${link}" | tee -a /etc/log-create-user.log
 echo -e "Link TrGo (v2rayNG)	: ${link1}" | tee -a /etc/log-create-user.log
-echo -e "========================="
-echo -e "Script Mod By Gemilangkinasih࿐"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[40;1;37mPremium AutoScript By Gemilangvip  \E[0m" | tee -a /etc/log-create-user.log
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo "" | tee -a /etc/log-create-user.log
 read -n 1 -s -r -p "Press any key to back on menu"
-
 menu
