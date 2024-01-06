@@ -65,7 +65,7 @@ ask=`cat<<EOF
       {
       "v": "2",
       "ps": "${user}",
-      "add": "${domain}",
+      "add": "${bug}",
       "port": "80",
       "id": "${uuid}",
       "aid": "0",
