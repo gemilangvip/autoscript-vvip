@@ -62,7 +62,7 @@ echo -e "\E[40;1;37mCREATE ACCOUNT VLESS SUCCESS       \E[0m" | tee -a /etc/log-
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Remarks        : ${user}" | tee -a /etc/log-create-user.log
 echo -e "Limit ip       : ${Limit} Devic"
-echo -e "Limit Quota  	: ${quota} GB"
+echo -e "Limit Quota    : ${quota} GB"
 echo -e "Limit Bw       : ${bw} GB"
 echo -e "Domain         : ${domain}" | tee -a /etc/log-create-user.log
 echo -e "port TLS       : $tls" | tee -a /etc/log-create-user.log
