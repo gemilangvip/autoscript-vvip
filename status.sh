@@ -17,6 +17,7 @@ BGWHITE='\e[0;100;37m'
 clear
 
 # System Information
+ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
 domain=$(cat /etc/xray/domain)
 WKT=$(curl -s ipinfo.io/timezone)
 IPVPS=$(curl -s ipv4.icanhazip.com)
@@ -186,7 +187,7 @@ echo -e "${ORANGE} ━━━━━━━━━━━━━━━━━━━━�
 echo -e " ${BGWHITE}           » System Server Information «          ${NC}"
 echo -e "${ORANGE} ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "${GREEN} » ${NC}Operating System : $(cat /etc/os-release | grep -w PRETTY_NAME | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/PRETTY_NAME//g')"
-echo -e "${GREEN} » ${NC}ISP Server       : $(cat /etc/xray/isp)${NC}"
+echo -e "${GREEN} » ${NC}ISP Server       : $ISP"
 echo -e "${GREEN} » ${NC}IP -Server       : $IPVPS$NC"
 echo -e "${GREEN} » ${NC}Domain Server    : $(cat /etc/xray/domain)${NC}"
 echo -e "${ORANGE} ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
@@ -223,8 +224,8 @@ echo -e "${GREEN} » ${NC}Service Xray Shadow WS TLS    : $status_ss${NC}"
 echo -e "${GREEN} » ${NC}Service Xray Shadow WS NonTLS : $status_ss${NC}"
 echo -e "${GREEN} » ${NC}Service Xray Shadow gRPC      : $status_ss${NC}"
 echo -e "${GREEN} » ${NC}Service Iptables              : $status_galo${NC}"
-echo -e "${GREEN} » ${NC}Service RClocal               : $status_galoo${NC}"
-echo -e "${GREEN} » ${NC}Service Autoreboot            : $status_galooo${NC}"
+# echo -e "${GREEN} » ${NC}Service RClocal               : $status_galoo${NC}"
+# echo -e "${GREEN} » ${NC}Service Autoreboot            : $status_galooo${NC}"
 echo -e "${ORANGE} ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e ""
 read -n 1 -s -r -p " Press any key to back on menu"
