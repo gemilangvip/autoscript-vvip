@@ -37,9 +37,9 @@ v2ray-menu
 
 uuid=$(cat /proc/sys/kernel/random/uuid)
 read -p "limit ip ( DEVIC ) : " limit
-read -p "limit quota ( GB ): " quota
+read -p "limit quota ( GB ) : " quota
 read -p "limit bandwith ( GB ) :  " bw
-read -p "Expired (days): " masaaktif
+read -p "Expired (days) : " masaaktif
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 sed -i '/#vless$/a\### '"$user $exp"'\
 },{"id": "'""$uuid""'","alterId": '"0"',"email": "'""$user""'"' /etc/xray/config.json
