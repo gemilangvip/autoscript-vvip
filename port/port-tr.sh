@@ -1,10 +1,11 @@
 #!/bin/bash
 clear
 tr="$(cat ~/log-install.txt | grep -i "Trojan-GFW" | cut -d: -f2|sed 's/ //g')"
+echo -e "======================================"
 echo -e "Name : Change Port Trojan-GFW"
-echo -e "========================="
-echo -e "Change Port    : $tr"
-read -p "New Port Trojan-GFW: " tr2
+echo -e "======================================"
+echo -e "Change Port         : $tr"
+read -p "New Port Trojan-GFW : " tr2
 if [ -z $tr2 ]; then
 echo "Please Input Port"
 exit 0
