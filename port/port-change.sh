@@ -17,7 +17,7 @@ echo -e   "Press x or [ Ctrl+C ] • To-Exit"
 echo -e   ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-read -p " Select menu : " opt
+read -p "Select menu : " opt
 echo -e ""
 case $opt in
 1) clear ; port-ssl ; exit ;;
