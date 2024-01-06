@@ -17,7 +17,7 @@ echo -e "     [2]  Change Port UDP $ovpn2"
 echo -e "     [x]  Exit"
 echo -e "======================================"
 echo -e ""
-read -p "     Select From Options [1-2 or x] :  " prot
+read -p "Select From Options [1-2 or x] :  " prot
 echo -e ""
 case $prot in
 1)
