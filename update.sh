@@ -44,7 +44,7 @@ echo -e "      \e[$number [ x ]\e[m \e[$below BBack To Menu\e[m"
 echo -e ""
 echo -e "   \e[$line--------------------------------------------------------\e[m"
 echo -e "\e[$line"
-read -p "PPlease Choose 1 or x : " option2
+read -p "Please Choose 1 or x : " option2
 case $option2 in
 1)
 version=$(cat /home/ver)
