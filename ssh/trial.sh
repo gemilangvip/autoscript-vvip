@@ -4,8 +4,8 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
 # Getting
 clear
-export CHATID="5692196612"
-export KEY="6513417732:AAGKZ8Qnu2yl0HHbm9-c8C7vKV9Focn7ygw"
+export CHATID="6348824977"
+export KEY="6854390843:AAHnygrqUOSq-5spVPBBrOvBMy4xcdUBPBU"
 export TIME="10"
 export URL="https://api.telegram.org/bot$KEY/sendMessage"
 clear
@@ -52,7 +52,7 @@ PID=`ps -ef |grep -v grep | grep sshws |awk '{print $2}'`
 
 if [[ ! -z "${PID}" ]]; then
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\E[40;1;37m         Trial SSH Account         \E[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[40;1;37mCREATE TRIAL ACCOUNT SSH SUCCESS    \E[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Username    : $Login" | tee -a /etc/log-create-user.log
 echo -e "Password    : $Pass" | tee -a /etc/log-create-user.log
@@ -79,13 +79,13 @@ echo -e ""
 echo -e "Payload WS" | tee -a /etc/log-create-user.log
 echo -e "GET / HTTP/1.1[crlf]Host: $domen[crlf]Upgrade: websocket[crlf][crlf]" | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\E[40;1;37mScript Premium By Gemilangkinasih࿐ \E[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[40;1;37mAutoScript By Gemilangkinasih࿐     \E[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 
 else
 
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\E[40;1;37m         Trial SSH Account         \E[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[40;1;37mCREATE TRIAL ACCOUNT SSH SUCCESS    \E[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Username    : $Login" | tee -a /etc/log-create-user.log
 echo -e "Password    : $Pass" | tee -a /etc/log-create-user.log
@@ -112,7 +112,7 @@ echo -e ""
 echo -e "Payload WS" | tee -a /etc/log-create-user.log
 echo -e "GET / HTTP/1.1[crlf]Host: $domen[crlf]Upgrade: websocket[crlf][crlf]" | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\E[40;1;37mScript Premium By Gemilangkinasih࿐ \E[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[40;1;37mAutoScript By Gemilangkinasih࿐     \E[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 fi
 echo "" | tee -a /etc/log-create-user.log
