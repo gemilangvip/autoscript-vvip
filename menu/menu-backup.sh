@@ -46,7 +46,7 @@ figlet "backup" | lolcat
 backup
 echo "--------------------------------------------------------"
 echo
-echo "Terimakasih sudah menggunakan layanan script Gemilangkinasih࿐"
+echo "Terimakasih sudah menggunakan layanan Autoscript Gemilangkinasih࿐"
 echo
 echo "--------------------------------------------------------"
 fi
@@ -57,7 +57,7 @@ figlet "Restore" | lolcat
 restore
 echo "--------------------------------------------------------"
 echo
-echo "Terimakasih sudah menggunakan layanan script Gemilangkinasih࿐"
+echo "Terimakasih sudah menggunakan layanan Autoscript Gemilangkinasih࿐"
 echo
 echo "--------------------------------------------------------"
 fi
@@ -67,7 +67,7 @@ figlet "strt"
 strt
 echo "--------------------------------------------------------"
 echo
-echo "Terimakasih sudah menggunakan layanan script Gemilangkinasih࿐"
+echo "Terimakasih sudah menggunakan layanan Autoscript Gemilangkinasih࿐"
 echo
 echo "--------------------------------------------------------"
 fi
@@ -76,7 +76,7 @@ then
 limitspeed
 echo "--------------------------------------------------------"
 echo
-echo "Terimakasih sudah menggunakan layanan script RGemilangkinasih࿐"
+echo "Terimakasih sudah menggunakan layanan Autoscript Gemilangkinasih࿐"
 echo
 echo "--------------------------------------------------------"
 fi
@@ -86,7 +86,7 @@ then
 autobackup
 echo "--------------------------------------------------------"
 echo
-echo "Terimakasih sudah menggunakan layanan script Gemilangkinasih࿐"
+echo "Terimakasih sudah menggunakan layanan Autoscript Gemilangkinasih࿐"
 echo
 echo "--------------------------------------------------------"
 fi
