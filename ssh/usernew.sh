@@ -40,7 +40,7 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 read -p "Username : " Login
 read -p "Password : " Pass
 read -p "limit ip : " limit
-read -p "Expired (hari): " masaaktif
+read -p "Expired (Hari) : " masaaktif
 
 IP=$(curl -sS ifconfig.me);
 ossl=`cat /root/log-install.txt | grep -w "OpenVPN" | cut -f2 -d: | awk '{print $6}'`
