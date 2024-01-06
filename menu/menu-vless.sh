@@ -108,7 +108,7 @@ echo "Checking VPS"
 
 clear
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "       ${BIWhite}${UWhite}VLESS ${NC}"
+echo -e "     ${BIWhite}${UWhite}MENU VLESS ${NC}"
 echo -e ""
 echo -e "     ${BICyan}[${BIWhite}01${BICyan}] Create Account XRAY Vless Websocket  "
 echo -e "     ${BICyan}[${BIWhite}02${BICyan}] Trial Account XRAY Vless   "
