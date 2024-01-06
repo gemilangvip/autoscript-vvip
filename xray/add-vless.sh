@@ -1,4 +1,13 @@
 #!/bin/bash
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# System Request : Debian 9+/Ubuntu 18.04+/20+
+# Develovers » Gemilangkinasih࿐
+# Email      » gemilangkinasih@gmail.com
+# telegram   » https://t.me/gemilangkinasih
+# whatsapp   » wa.me/+628984880039
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# Gemilangkinasih࿐
+
 dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
@@ -49,11 +58,11 @@ vlesslink3="vless://${uuid}@${domain}:$tls?mode=gun&security=tls&encryption=none
 systemctl restart xray
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\E[40;1;37m        Xray/Vless Account        \E[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[40;1;37mCREATE ACCOUNT VLESS SUCCESS       \E[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Remarks        : ${user}" | tee -a /etc/log-create-user.log
-echo -e "Limit ip         : ${Limit} Devic"
-echo -e "Limit Quota  : ${quota} GB"
+echo -e "Limit ip       : ${Limit} Devic"
+echo -e "Limit Quota  	: ${quota} GB"
 echo -e "Limit Bw       : ${bw} GB"
 echo -e "Domain         : ${domain}" | tee -a /etc/log-create-user.log
 echo -e "port TLS       : $tls" | tee -a /etc/log-create-user.log
