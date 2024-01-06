@@ -88,7 +88,7 @@ echo -e ""
 echo -e "Payload WS" | tee -a /etc/log-create-user.log
 echo -e "GET / HTTP/1.1[crlf]Host: $domen[crlf]Upgrade: websocket[crlf][crlf]" | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\E[40;1;37mAutoScript By Gemilangkinasih࿐     \E[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[40;1;37mPremium AutoScript By Gemilangvip  \E[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 
 else
@@ -121,7 +121,7 @@ echo -e ""
 echo -e "Payload WS" | tee -a /etc/log-create-user.log
 echo -e "GET / HTTP/1.1[crlf]Host: $domen[crlf]Upgrade: websocket[crlf][crlf]" | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\E[40;1;37mAutoScript By Gemilangkinasih࿐     \E[0m" | tee -a /etc/log-create-user.log
+echo -e "\E[40;1;37mPremium AutoScript By Gemilangvip  \E[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 fi
 echo "" | tee -a /etc/log-create-user.log
