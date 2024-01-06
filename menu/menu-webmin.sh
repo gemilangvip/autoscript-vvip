@@ -99,7 +99,7 @@ echo -e   "Press x or [ Ctrl+C ] • To-Exit"
 echo -e ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-read -rp " Please Enter The Correct Number : " -e num
+read -rp "Please Enter The Correct Number : " -e num
 if [[ "$num" = "1" ]]; then
 install
 elif [[ "$num" = "2" ]]; then
