@@ -27,7 +27,7 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 echo -e "\E[40;1;37m       Add Xray/Vmess Account      \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 
-		read -rp "User: " -e user
+		read -rp "User : " -e user
 		CLIENT_EXISTS=$(grep -w $user /etc/xray/config.json | wc -l)
 
 		if [[ ${CLIENT_EXISTS} == '1' ]]; then
@@ -115,7 +115,7 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 echo -e "Remarks        : ${user}" | tee -a /etc/log-create-user.log
 echo -e "limit Ip       : ${limit} ( Device )"
 echo -e "limit Quota    : ${quota} ( GB )"
-echo -e "limit BW	: ${domain}" | tee -a /etc/log-create-user.log
+echo -e "limit BW       : ${bw}" | tee -a /etc/log-create-user.log
 echo -e "Port TLS       : 443" | tee -a /etc/log-create-user.log
 echo -e "Port None TLS  : 80" | tee -a /etc/log-create-user.log
 echo -e "Port  GRPC     : 443" | tee -a /etc/log-create-user.log
