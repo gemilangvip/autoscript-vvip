@@ -45,9 +45,9 @@ v2ray-menu
 	done
 
 uuid=$(cat /proc/sys/kernel/random/uuid)
-read -p "limit ip ( DEVIC ) : " limit
-read -p "limit quota ( GB ) : " quota
-read -p "limit bandwith ( GB ) :  " bw
+read -p "limit Ip ( DEVICE )   : " limit
+read -p "limit Quota ( GB )    : " quota
+read -p "limit Bandwith ( GB ) :  " bw
 read -p "Expired (days)	: " masaaktif
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 sed -i '/#vmess$/a\### '"$user $exp"'\
@@ -110,17 +110,16 @@ systemctl restart xray > /dev/null 2>&1
 service cron restart > /dev/null 2>&1
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\\E[40;1;37mCREATE ACCOUNT VMESS SUCCESS      \E[0m" | tee -a /etc/log-create-user.log
+echo -e "\\E[40;1;37mCREATE ACCOUNT VMESS SUCCESS       \E[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Remarks        : ${user}" | tee -a /etc/log-create-user.log
-echo -e "limit ip       : ${limit} ( Device )"
-echo -e "limit quota    : ${quota} ( GB )"
-echo -e "limit bw       : ${bw} ( GB )"
-echo -e "Domain         : ${domain}" | tee -a /etc/log-create-user.log
+echo -e "limit Ip       : ${limit} ( Device )"
+echo -e "limit Quota    : ${quota} ( GB )"
+echo -e "limit BW    	: ${domain}" | tee -a /etc/log-create-user.log
 echo -e "Port TLS       : 443" | tee -a /etc/log-create-user.log
-echo -e "Port none TLS  : 80" | tee -a /etc/log-create-user.log
+echo -e "Port None TLS  : 80" | tee -a /etc/log-create-user.log
 echo -e "Port  GRPC     : 443" | tee -a /etc/log-create-user.log
-echo -e "id             : ${uuid}" | tee -a /etc/log-create-user.log
+echo -e "Id             : ${uuid}" | tee -a /etc/log-create-user.log
 echo -e "alterId        : 0" | tee -a /etc/log-create-user.log
 echo -e "Security       : auto" | tee -a /etc/log-create-user.log
 echo -e "Network        : ws" | tee -a /etc/log-create-user.log
