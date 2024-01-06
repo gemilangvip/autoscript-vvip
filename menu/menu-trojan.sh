@@ -108,7 +108,7 @@ echo "Checking VPS"
 
 clear
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "       ${BIWhite}${UWhite}TROJAN ${NC}"
+echo -e "     ${BIWhite}${UWhite}MENU TROJAN ${NC}"
 echo -e ""
 echo -e "     ${BICyan}[${BIWhite}01${BICyan}] Create Account Trojan    "
 echo -e "     ${BICyan}[${BIWhite}02${BICyan}] Trial Account Trojan     "
