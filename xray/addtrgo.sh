@@ -40,7 +40,7 @@ until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${user_EXISTS} == '0' ]]; do
 	done
 uuid=$(cat /proc/sys/kernel/random/uuid)
 read -p "limit ip ( DEVIC ) : " limit
-read -p "limit quota ( GB ): " quota
+read -p "limit quota ( GB ) : " quota
 read -p "limit bandwith ( GB ) :  " bw
 read -p "Expired (Days) : " masaaktif
 sed -i '/"'""$uuid""'"$/a\,"'""$user""'"' /etc/trojan-go/config.json
