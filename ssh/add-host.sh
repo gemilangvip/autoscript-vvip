@@ -8,7 +8,7 @@ cekray=`cat /root/log-install.txt | grep -ow "XRAY" | sort | uniq`
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo ""
-read -rp "Domain/Host: " -e host
+read -rp "Domain/Host : " -e host
 echo ""
 if [ -z $host ]; then
 echo "????"
