@@ -43,10 +43,10 @@ clear
 	done
 
 uuid=$(cat /proc/sys/kernel/random/uuid)
-read -p "Expired (days): " masaaktif
-read -p "limit ip ( DEVIC ) : " limit
-read -p "limit quota ( GB ): " quota
-read -p "limit bandwith ( GB ) :  " bw 
+read -p "Expired (Days)	: " masaaktif
+read -p "limit Ip ( DEVIC ) : " limit
+read -p "limit Quota ( GB ) : " quota
+read -p "limit Bandwith ( GB ) :  " bw 
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 sed -i '/#trojanws$/a\#! '"$user $exp"'\
 },{"password": "'""$uuid""'","email": "'""$user""'"' /etc/xray/config.json
