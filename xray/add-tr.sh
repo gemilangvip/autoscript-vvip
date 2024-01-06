@@ -1,4 +1,13 @@
 #!/bin/bash
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# System Request : Debian 9+/Ubuntu 18.04+/20+
+# Develovers » Gemilangkinasih࿐
+# Email      » gemilangkinasih@gmail.com
+# telegram   » https://t.me/gemilangkinasih
+# whatsapp   » wa.me/+628984880039
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# Gemilangkinasih࿐
+
 dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
@@ -49,7 +58,7 @@ trojanlink1="trojan://${uuid}@${domain}:${tr}?mode=gun&security=tls&type=grpc&se
 trojanlink="trojan://${uuid}@isi_bug_disini:${tr}?path=%2Ftrojan-ws&security=tls&host=${domain}&type=ws&sni=${domain}#${user}"
 clear
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[40;1;37m        TROJAN ACCOUNT          \E[0m"
+echo -e "\E[40;1;37mCREATE ACCOUNT TROJAN SUCCESS      \E[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "Remarks      : ${user}"
 echo -e "limit ip     : ${limit}"
@@ -69,5 +78,4 @@ echo -e "Expired On   : $exp"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
-
 menu
