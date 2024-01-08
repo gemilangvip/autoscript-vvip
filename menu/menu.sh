@@ -228,7 +228,6 @@ export sem=$( curl -s https://raw.githubusercontent.com/gemilangvip/autoscript-v
 export pak=$( cat /home/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
 clear
-echo -e "$(figlet " GemilangSC")" | lolcat
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
 echo -e "${BICyan} │                  ${BIWhite}${UWhite}GEMILANG-KINASIH${NC}"
 echo -e "${BICyan} │"
@@ -261,7 +260,7 @@ DATE=$(date +'%d %B %Y')
 datediff() {
 d1=$(date -d "$1" +%s)
 d2=$(date -d "$2" +%s)
-echo -e "${BICyan}    │$NC Expired Script  : $(( (d1 - d2) / 86400 )) Days $NC"
+echo -e "${BICyan}    │$NC Expired Script  : $(cat /usr/bin/e) / $(( (d1 - d2) / 86400 )) Days $NC"
 }
 mai="datediff "$Exp" "$DATE""
 echo -e "${BICyan}    ┌───────────────────────────────────────────────┐${NC}"
