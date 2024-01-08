@@ -42,6 +42,9 @@ echo -e "${ORANGE}          » DELETE SSH OPENVPN «          ${NC}"
 echo -e "${ORANGE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo ""
 read -p "Ketik Usernamenya : " Pengguna
+if [ -z $pengguna ]; then
+    menu
+    else
 
 if getent passwd $Pengguna > /dev/null 2>&1; then
         userdel $Pengguna > /dev/null 2>&1
