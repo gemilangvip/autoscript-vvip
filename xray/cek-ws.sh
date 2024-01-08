@@ -8,12 +8,14 @@
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # Gemilangkinasih࿐
 
+BGWHITE='\e[0;100;37m'
+
 clear
 echo -n > /tmp/other.txt
 data=( `cat /etc/xray/config.json | grep '###' | cut -d ' ' -f 2 | sort | uniq`);
-echo "-------------------------------";
-echo "-----=[ XRAY User Login ]=-----";
-echo "-------------------------------";
+echo -e "\033[0;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "${BGWHITE}    CEK USER LOGIN VMESS ACCOUNT   \E[0m"
+echo -e "\033[0;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 for akun in "${data[@]}"
 do
 if [[ -z "$akun" ]]; then
@@ -38,15 +40,14 @@ echo > /dev/null
 else
 jum2=$(cat /tmp/ipxray.txt | nl)
 lastlogin=$(cat /var/log/xray/access.log | grep -w "$akun" | tail -n 500 | cut -d " " -f 2 | tail -1)
-echo -e "user :${GREEN} ${akun} ${NC}
-${RED}Online Jam ${NC}: ${lastlogin} wib";
+echo -e "USERNAME :${GREEN} ${akun} ${NC}
+${RED}ONLINE TIME ${NC}: ${lastlogin} WIB";
 echo -e "$jum2";
-echo "-------------------------------"
+echo -e "\033[0;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 fi
 rm -rf /tmp/ipxray.txt
 done
 rm -rf /tmp/other.txt
-
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
