@@ -71,7 +71,7 @@ case $opt in
 8) clear ; nano /etc/issue.net ; exit ;; #ssh-vpn banner.conf
 9) clear ; bw ; exit ;;
 10) clear ; jam ; exit ;;
-10) clear ; cat /etc/log-create-user.log ; exit ;;
+11) clear ; cat /etc/log-create-user.log ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
 *) echo -e "" ; echo "Anda salah tekan" ; sleep 1 ; menu-set ;;
