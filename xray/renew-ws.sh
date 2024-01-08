@@ -46,8 +46,6 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/xray/config.json")
     renew-ws
     else
     read -p "Expired (Days)  : " masaaktif
-    rm -f /etc/kyt/limit/vmess/ip/${user}
-    rm -f /etc/vmess/$user
     exp=$(grep -wE "^### $user" "/etc/xray/config.json" | cut -d ' ' -f 3 | sort | uniq)
     now=$(date +%Y-%m-%d)
     d1=$(date -d "$exp" +%s)
