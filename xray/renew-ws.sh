@@ -49,14 +49,6 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/xray/config.json")
     rm -f /etc/kyt/limit/vmess/ip/${user}
     rm -f /etc/vmess/$user
     exp=$(grep -wE "^### $user" "/etc/xray/config.json" | cut -d ' ' -f 3 | sort | uniq)
-    mkdir -p /etc/kyt/limit/vmess/ip
-echo ${iplim} >> /etc/kyt/limit/vmess/ip/${user}
-
-if [ ! -e /etc/vmess/ ]; then
-  mkdir -p /etc/vmess/
-fi
-
-
     now=$(date +%Y-%m-%d)
     d1=$(date -d "$exp" +%s)
     d2=$(date -d "$now" +%s)
