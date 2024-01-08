@@ -71,10 +71,10 @@ clear
 echo " "
 echo " "
 echo " "
-echo "-------------------------------------------"
+echo "\033[0;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "Username ${blue}$username${NC} successfully ${green}UNLOCKED${NC}."
 echo -e "Access for Username ${blue}$username${NC} has been restored"
-echo "-------------------------------------------"
+echo "\033[0;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 else
 echo " "
 echo -e "Username ${red}$username${NC} not found in your server."
