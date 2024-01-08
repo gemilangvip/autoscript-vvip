@@ -43,7 +43,7 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/xray/config.json")
     echo -e "\033[0;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 	  read -rp "Input Username : " user
     if [ -z $user ]; then
-    renew-ws
+    menu
     else
     read -p "Expired (Days)  : " masaaktif
     exp=$(grep -wE "^### $user" "/etc/xray/config.json" | cut -d ' ' -f 3 | sort | uniq)
