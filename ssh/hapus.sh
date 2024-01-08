@@ -43,10 +43,6 @@ echo -e "${ORANGE}━━━━━━━━━━━━━━━━━━━━�
 echo ""
 read -p "Ketik Usernamenya : " Pengguna
 
-if [ -z $Pengguna ]; then
-    menu
-    else
-
 if getent passwd $Pengguna > /dev/null 2>&1; then
         userdel $Pengguna > /dev/null 2>&1
         echo -e "User $Pengguna Berhasil Di Hapus Sayang!"
