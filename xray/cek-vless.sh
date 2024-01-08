@@ -24,7 +24,7 @@ clear
 echo -n > /tmp/other.txt
 data=( `cat /etc/xray/config.json | grep '^####' | cut -d ' ' -f 2`);
 echo -e "\033[0;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo "---------=[ Vless User Login ]=---------";
+echo -e "${BGWHITE}    CEK USER LOGIN VLESS ACCOUNT   \E[0m"
 echo -e "\033[0;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 for akun in "${data[@]}"
 do
@@ -56,10 +56,10 @@ fi
 rm -rf /tmp/ipvless.txt
 done
 oth=$(cat /tmp/other.txt | sort | uniq | nl)
-echo "other";
+echo "OTHER";
 echo "$oth";
 echo -e "\033[0;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo "Script"
+echo "SCRIPT"
 echo ""
 rm -rf /tmp/other.txt
 read -n 1 -s -r -p "Press any key to back on menu"
