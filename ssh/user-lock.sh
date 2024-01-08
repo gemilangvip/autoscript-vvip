@@ -69,10 +69,10 @@ clear
 echo " "
 echo " "
 echo " "
-echo "-----------------------------------------------"
+echo "\033[0;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "Username ${blue}$username${NC} successfully ${red}LOCKED!${NC}."
 echo -e "Access Login to username ${blue}$username${NC} has been locked."
-echo "-----------------------------------------------"
+echo "\033[0;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 else
 echo "Username not found on your server."
 exit 1
