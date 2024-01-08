@@ -16,13 +16,14 @@ BLUE='\033[0;34m'
 PURPLE='\033[0;35m'
 CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
+BGWHITE='\e[0;100;37m'
 
 clear
 echo -n > /tmp/other.txt
 data=( `cat /etc/xray/config.json | grep '^#&#' | cut -d ' ' -f 2`);
-echo "-----------------------------------------";
-echo "---------=[ Trojan User Login ]=---------";
-echo "-----------------------------------------";
+echo -e "\033[0;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "${BGWHITE}   CEK USER LOGIN TROJAN ACCOUNT   \E[0m"
+echo -e "\033[0;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 for akun in "${data[@]}"
 do
 if [[ -z "$akun" ]]; then
@@ -46,15 +47,17 @@ if [[ -z "$jum" ]]; then
 echo > /dev/null
 else
 jum2=$(cat /tmp/iptrojan.txt | nl)
-echo "user : $akun";
+echo "USER : $akun";
 echo "$jum2";
-echo "-----------------------------------------"
+echo -e "\033[0;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 fi
 rm -rf /tmp/iptrojan.txt
 done
 oth=$(cat /tmp/other.txt | sort | uniq | nl)
-echo "other";
+echo "OTHER";
 echo "$oth";
-echo "-----------------------------------------"
-echo "Script"
+echo -e "\033[0;33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo "SCRIPT"
 rm -rf /tmp/other.txt
+read -n 1 -s -r -p "Press any key to back on menu"
+menu
