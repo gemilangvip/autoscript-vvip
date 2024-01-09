@@ -187,10 +187,6 @@ chmod +x /usr/bin/cek-vless
 chmod +x /usr/bin/renew-vless
 chmod +x /usr/bin/trialvless
 chmod +x /usr/bin/menu-trial
-
-wget -q -O /usr/bin/status "https://raw.githubusercontent.com/gemilangvip/autoscript-vvip/main/status.sh"
-chmod +x /usr/bin/status
-
 clear
 echo -e ""
 echo -e "\e[0;32mDownloaded successfully!\e[0m"
