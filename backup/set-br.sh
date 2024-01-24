@@ -27,9 +27,9 @@ account default
 host smtp.gmail.com
 port 587
 auth on
-user backupsmtp93@gmail.com
-from backupsmtp93@gmail.com
-password sdallofkbpuhbtoa
+user gemilangpremium@gmail.com
+from gemilangpremium@gmail.com
+password viwj ieie exhz wbvq
 logfile ~/.msmtp.log
 EOF
 chown -R www-data:www-data /etc/msmtprc
