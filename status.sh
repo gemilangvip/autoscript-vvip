@@ -45,8 +45,8 @@ Iptables=$(systemctl status netfilter-persistent | grep active | awk '{print $3}
 RClocal=$(systemctl status rc-local | grep active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g')
 Autorebot=$(systemctl status rc-local | grep active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g')
 UdpSSH=$(systemctl status udp-custom | grep active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g')
-
 openssh=$( systemctl status ssh | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
+
 if [[ $openssh == "running" ]]; then
     status_openssh="${GREEN}Online${NC}(No ${RED}Error${NC})"
 else
