@@ -1,12 +1,4 @@
 #!/bin/bash
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# System Request : Debian 9+/Ubuntu 18.04+/20+
-# Develovers » Gemilangkinasih࿐
-# Email      » gemilangkinasih@gmail.com
-# telegram   » https://t.me/gemilangkinasih
-# whatsapp   » wa.me/+628984880039
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# Gemilangkinasih࿐
 
 #install
 rm -rf xolpanel.sh
@@ -19,10 +11,10 @@ pip3 install pillow
 
 #isi data
 echo ""
-read -e -p "[*] Input your Bot Token   : " bottoken
-read -e -p "[*] Input Your Id Telegram : " admin
-read -e -p "[*] Input Your Subdomain   : " domain
-read -e -p "[*] Input Your NSdomain    : " sldomain
+read -e -p "[*] Input your Bot Token : " bottoken
+read -e -p "[*] Input Your Id Telegram :" admin
+read -e -p "[*] Input Your Subdomain :" domain
+read -e -p "[*] Input Your NSdomain :" sldomain
 echo -e BOT_TOKEN='"'$bottoken'"' >> /root/xolpanel/var.txt
 echo -e ADMIN='"'$admin'"' >> /root/xolpanel/var.txt
 echo -e DOMAIN='"'$domain'"' >> /root/xolpanel/var.txt
@@ -35,6 +27,7 @@ echo "Bot Token     : $bottoken"
 echo "Id Telegram   : $admin"
 echo "Subdomain     : $domain"
 echo "NSdomain      : $sldomain"
+
 echo -e "==============================="
 echo "Setting done Please wait 10s"
 sleep 10
