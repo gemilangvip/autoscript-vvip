@@ -285,7 +285,7 @@ case $opt in
 7) clear ; menu-backup ;;
 8) clear ; add-host ;;
 9) clear ; running ;;
-10) clear ; clear ; wget https://raw.githubusercontent.com/gemilangvip/autoscript-vvip/main/udp-custom.sh && chmod +x udp-custom.sh && ./udp-custom.sh ;;
+10) clear ; wget https://raw.githubusercontent.com/gemilangvip/autoscript-vvip/main/udp-custom.sh && chmod +x udp-custom.sh && ./udp-custom.sh ;;
 11) clear ; xolpanel ;;
 12) clear ; bw ;;
 13) clear ; menu-theme ;;
