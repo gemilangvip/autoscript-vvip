@@ -1,6 +1,6 @@
 #!/bin/bash
 BURIQ () {
-curl -sS https://raw.githubusercontent.com/gemilangvip/autoscript-vvip/main/register > /root/tmp
+curl -sS https://raw.githubusercontent.com/Fahrihosting1/autoscript-vvip/main/register > /root/tmp
 data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
 for user in "${data[@]}"
 do
